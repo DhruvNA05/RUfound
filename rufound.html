@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RUFound - Lost and Found for Rutgers</title>
+        <link rel="stylesheet" href="rufound.css">
+        <style>
+            /* Main section layout */
+            .team-library-section {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                overflow: hidden;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            /* Background image for the section */
+            .team-library-background {
+                background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/ec280070fd2fd4df8eb843cf1491efd122c2d4d8528b917fdfd334824d2bd51d?placeholderIfAbsent=true&apiKey=50bf06f3e9d2439698a9e4eefc1301bb') no-repeat center center fixed;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            /* Content container with text and buttons */
+            .content-container {
+                background: rgba(0, 0, 0, 0.7);
+                padding: 40px;
+                border-radius: 10px;
+                max-width: 600px;
+                z-index: 2;
+            }
+
+            .section-title {
+                color: rgb(255, 0, 0);
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+
+            .section-description {
+                color: white;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            /* Button container below the text */
+            .button-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            /* Styles for navigation buttons */
+            .nav-button {
+                padding: 20px 40px;
+                background-color: #A50034;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 20px;
+                text-decoration: none;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            .nav-button:hover {
+                background-color: #900028;
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <section class="team-library-section">
+            <div class="team-library-background"></div>
+            <div class="content-container">
+                <h2 class="section-title">RUFound - Lost and Found for Rutgers</h2>
+                <p class="section-description">
+                    People lose things on campus all the time and have a tough time finding them. Our application creates a singular place where people can search for their items.
+                </p>
+                <div class="button-container">
+                    <a href="lost.html" class="nav-button">Lost something?</a>
+                    <a href="found.html" class="nav-button">Found something?</a>
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
